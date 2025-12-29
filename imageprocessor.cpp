@@ -103,7 +103,7 @@ void ImageProcessor::loadFile(QString filename)
 
 void ImageProcessor::showOpenFile()
 {
-    filename = QFileDialog::getOpenFileName(this,tr("開啟影像"),tr("."),"bmp(*.bmp);;png(*.png)"";;Jpng(*.jpg)");
+    filename = QFileDialog::getOpenFileName(this,tr("開啟影像"),tr("."),"bmp(*.bmp);;png(*.png);;jpg(*.jpg)");
     if(!filename.isEmpty()){
         if(img.isNull()){
             loadFile(filename);
